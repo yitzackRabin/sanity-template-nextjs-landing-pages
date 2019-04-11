@@ -3,7 +3,17 @@ module.exports = ({file, options, env}) => ({
     'postcss-import': {},
     cssnano: env === 'production' ? {} : false,
     'postcss-preset-env': {
-      stage: 0
+      stage: 3,
+      features: {
+        'color-mod-function': {unresolved: 'warn'},
+        'nesting-rules': true,
+        'custom-media-queries': {
+          preserve: false
+        },
+        'custom-properties': {
+          preserve: false
+        }
+      }
     }
   }
 })

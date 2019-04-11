@@ -58,12 +58,9 @@ class Header extends Component {
     if (!logo || !logo.asset) {
       return null
     }
-
     if (logo.asset.extension === 'svg') {
       return <SVG src={logo.asset.url} className={styles.logo} />
     }
-
-    return <img src={logo.asset.url} alt={logo.title} className={styles.logo} />
   }
 
   render () {
@@ -76,9 +73,7 @@ class Header extends Component {
           <Link
             href={{
               pathname: '/LandingPage',
-              query: {
-                slug: '/'
-              }
+              query: {slug: '/'}
             }}
             as='/'
             prefetch

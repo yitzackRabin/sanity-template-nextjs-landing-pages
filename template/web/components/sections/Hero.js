@@ -1,5 +1,5 @@
-import React from 'react'
 import PropTypes from 'prop-types'
+import React from 'react'
 import imageUrlBuilder from '@sanity/image-url'
 import styles from './Hero.module.css'
 import client from '../../client'

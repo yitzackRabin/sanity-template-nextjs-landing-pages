@@ -2,8 +2,6 @@
 
 .root {
   position: relative;
-  background-color: var(--color-black, #000);
-  color: var(--color-white, #fff);
   display: flex;
   justify-content: space-between;
   align-items: center;
